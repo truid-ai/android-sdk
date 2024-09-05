@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="alert_terms_and_conditions_no">نہیں</string>
+    <string name="alert_terms_and_conditions_yes">جی ہاں</string>
+    <string name="app_name">TruId</string>
+    <string name="button_accept">قبول کریں</string>
+    <string name="button_more">مزید</string>
+    <string name="card_step_one">اپنا کارڈ ڈبے کے اندر لائیں</string>
+    <string name="data_extraction_optional_fields">اضافی معلومات</string>
+    <string name="face_step_one">اپنے چہرے کو دائرے کے بیچ میں رکھیں</string>
+    <string name="face_step_right">دائیں</string>
+    <string name="face_step_two">اس وقت تک دائیں طرف دیکھیں جب تک آپ گھنٹی نہیں سنیں</string>
+    <string name="face_step_two_1">اس وقت تک</string>
+    <string name="face_step_two_2">طرف دیکھیں جب تک آپ گھنٹی نہیں سنیں</string>
+    <string name="help_card_screen_detail">اپنا کارڈ ڈبے کے اندر لائیں</string>
+    <string name="help_step_one_liveness_detail">اپنے چہرے کو دائرے کے بیچ میں رکھیں</string>
+    <string name="help_step_two_liveness_detail">اس وقت تک دائیں طرف دیکھیں جب تک آپ گھنٹی نہیں سنیں</string>
+    <string name="next">آگے چلیں</string>
+    <string name="personal_detail_date_of_birth">تاریخ پیدائش</string>
+    <string name="personal_detail_email_address">ای میل</string>
+    <string name="personal_detail_expiry_date">تاریخ تنسیخ</string>
+    <string name="personal_detail_fathers_name">والد کا نام</string>
+    <string name="personal_detail_mailing_address">موجودہ پتہ</string>
+    <string name="personal_detail_name">نام</string>
+    <string name="preference_abroad_income">میں بیرون ملک سے رقم وصول کرنے کے لیے اکاؤنٹ استعمال کرنا چاہتا ہوں۔</string>
+    <string name="preference_foreign_income">میں غیر ملکی گاہکوں کو خدمات فراہم کرتا ہوں۔</string>
+    <string name="question_birth_place">اپنی پیدائش کا مقام منتخب کریں</string>
+    <string name="question_mother_name">اپنی والدہ کا آخری نام منتخب کریں</string>
+    <string name="step">مرحلہ</string>
+    <string name="text1_congratulations_screen">آپ کا بینک اکاؤنٹ کھول دیا گیا ہے</string>
+    <string name="text2_congratulations_screen">" "</string>
+    <string name="title_congratulations">مبارک ہو!</string>
+    <string name="title_data_extraction">ذاتی تفصیلات</string>
+    <string name="title_phone_number">موبائل نمبر درج کریں</string>
+</resources>
