@@ -2,8 +2,8 @@
 # compiler_version: 8.11.18
 # common_typos_disable
 # {"id":"com.android.tools.r8.mapping","version":"2.2"}
-# pg_map_id: e64c432
-# pg_map_hash: SHA-256 e64c4325be722c3904d3b22498ffa55e6e1fc0c0b745c3919abe05a5864d2f4e
+# pg_map_id: 948e3be
+# pg_map_hash: SHA-256 948e3be8d3f7a3def6c587239900623f2f55cf7621b18ac4a820acf900e3c299
 com.truid.android.Agent -> a.b:
 # {"id":"sourceFile","fileName":"UserData.kt"}
     android.graphics.Bitmap faceImage -> a
@@ -38,10 +38,10 @@ com.truid.android.AuthenticateWithTruID -> com.truid.android.AuthenticateWithTru
     13:13:com.truid.android.AuthenticateWithTruID$Output parseResult(int,android.content.Intent):59:59 -> parseResult
 com.truid.android.AuthenticateWithTruID$Input -> com.truid.android.AuthenticateWithTruID$Input:
 # {"id":"sourceFile","fileName":"AuthenticateWithTruID.kt"}
-    1:24:void <init>(java.lang.String,boolean,boolean,boolean,boolean,boolean,boolean,boolean,boolean,boolean,boolean,boolean,boolean,boolean,boolean,boolean,boolean,com.truid.android.vision.FingerprintOptions,boolean,boolean,boolean,java.lang.String):17:40 -> <init>
-    25:25:void <init>(java.lang.String,boolean,boolean,boolean,boolean,boolean,boolean,boolean,boolean,boolean,boolean,boolean,boolean,boolean,boolean,boolean,boolean,com.truid.android.vision.FingerprintOptions,boolean,boolean,boolean,java.lang.String,int,kotlin.jvm.internal.DefaultConstructorMarker):36:36 -> <init>
-    26:26:void <init>(java.lang.String,boolean,boolean,boolean,boolean,boolean,boolean,boolean,boolean,boolean,boolean,boolean,boolean,boolean,boolean,boolean,boolean,com.truid.android.vision.FingerprintOptions,boolean,boolean,boolean,java.lang.String,int,kotlin.jvm.internal.DefaultConstructorMarker):17:17 -> <init>
-    1:1:java.lang.String getCurrentApplicant():40:40 -> getCurrentApplicant
+    1:24:void <init>(java.lang.String,boolean,boolean,boolean,boolean,boolean,boolean,boolean,boolean,boolean,boolean,boolean,boolean,boolean,boolean,boolean,boolean,com.truid.android.vision.FingerprintOptions,boolean,boolean,boolean,java.lang.Integer):17:40 -> <init>
+    25:25:void <init>(java.lang.String,boolean,boolean,boolean,boolean,boolean,boolean,boolean,boolean,boolean,boolean,boolean,boolean,boolean,boolean,boolean,boolean,com.truid.android.vision.FingerprintOptions,boolean,boolean,boolean,java.lang.Integer,int,kotlin.jvm.internal.DefaultConstructorMarker):36:36 -> <init>
+    26:26:void <init>(java.lang.String,boolean,boolean,boolean,boolean,boolean,boolean,boolean,boolean,boolean,boolean,boolean,boolean,boolean,boolean,boolean,boolean,com.truid.android.vision.FingerprintOptions,boolean,boolean,boolean,java.lang.Integer,int,kotlin.jvm.internal.DefaultConstructorMarker):17:17 -> <init>
+    1:1:java.lang.Integer getApplicationId():40:40 -> getApplicationId
     1:1:boolean getDisableLocationCapture():38:38 -> getDisableLocationCapture
     1:1:boolean getDisplayFingerprintHelpPopup():39:39 -> getDisplayFingerprintHelpPopup
     1:1:boolean getDisplayHelpScreens():35:35 -> getDisplayHelpScreens
@@ -1135,7 +1135,7 @@ com.truid.android.TruIDLaunchActivity -> com.truid.android.TruIDLaunchActivity:
     8:8:void handleInput(com.truid.android.AuthenticateWithTruID$Input,android.content.Context):171 -> handleInput
     9:26:void handleInput(com.truid.android.AuthenticateWithTruID$Input,android.content.Context):171:188 -> handleInput
     27:27:void handleInput(com.truid.android.AuthenticateWithTruID$Input,android.content.Context):172:172 -> handleInput
-    27:27:void com.truid.android.api.Session.setCurrentApplicant$sdk_release(java.lang.String):172 -> handleInput
+    27:27:void com.truid.android.api.Session.setApplicationId$sdk_release(java.lang.Integer):172 -> handleInput
     27:27:void handleInput(com.truid.android.AuthenticateWithTruID$Input,android.content.Context):188 -> handleInput
     45:46:void handleInput(com.truid.android.AuthenticateWithTruID$Input,android.content.Context):190:191 -> handleInput
     47:47:com.truid.android.Fingers com.truid.android.UserData.getFingers():54:54 -> handleInput
@@ -1235,10 +1235,10 @@ com.truid.android.TruIDLaunchActivity -> com.truid.android.TruIDLaunchActivity:
     3:22:void com.truid.android.api.DocumentCapture.setEndFlow(kotlin.jvm.functions.Function0):0:19 -> startSession
     3:22:void startSession(android.location.Location):427 -> startSession
     23:23:void startSession(android.location.Location):428:428 -> startSession
-    24:45:void com.truid.android.api.FingerprintDetection.setOnBioFial$sdk_release(kotlin.jvm.functions.Function0):0:21 -> startSession
-    24:45:void startSession(android.location.Location):428 -> startSession
-    46:87:void startSession(android.location.Location):443:484 -> startSession
-    88:88:void startSession(android.location.Location):480:480 -> startSession
+    24:46:void com.truid.android.api.FingerprintDetection.setOnBioFial$sdk_release(kotlin.jvm.functions.Function0):0:22 -> startSession
+    24:46:void startSession(android.location.Location):428 -> startSession
+    47:88:void startSession(android.location.Location):443:484 -> startSession
+    89:89:void startSession(android.location.Location):480:480 -> startSession
     1:1:kotlin.Unit startSession$lambda$10(com.truid.android.TruIDLaunchActivity,java.lang.String):459:459 -> startSession$lambda$10
     2:2:void com.truid.android.TruidViewModel.setShowServerErrorDialog(boolean):11:11 -> startSession$lambda$10
     2:2:kotlin.Unit startSession$lambda$10(com.truid.android.TruIDLaunchActivity,java.lang.String):459 -> startSession$lambda$10
@@ -1525,16 +1525,16 @@ com.truid.android.api.DocumentCapture -> b.m:
     1:1:void <init>():14:14 -> <init>
     1:1:kotlin.Unit endFlow$lambda$0():19:19 -> a
     2:2:java.lang.String com.truid.android.api.Session.getAPIToken():85:85 -> a
-    2:2:void runIDtoSelfieMatching$sdk_release(kotlin.jvm.functions.Function1,kotlin.jvm.functions.Function1):173 -> a
+    2:2:void runIDtoSelfieMatching$sdk_release(kotlin.jvm.functions.Function1,kotlin.jvm.functions.Function1):177 -> a
     3:3:java.lang.String com.truid.android.api.Session.getSessionID():95:95 -> a
-    3:3:void runIDtoSelfieMatching$sdk_release(kotlin.jvm.functions.Function1,kotlin.jvm.functions.Function1):173 -> a
-    4:4:void runIDtoSelfieMatching$sdk_release(kotlin.jvm.functions.Function1,kotlin.jvm.functions.Function1):174:174 -> a
+    3:3:void runIDtoSelfieMatching$sdk_release(kotlin.jvm.functions.Function1,kotlin.jvm.functions.Function1):177 -> a
+    4:4:void runIDtoSelfieMatching$sdk_release(kotlin.jvm.functions.Function1,kotlin.jvm.functions.Function1):178:178 -> a
     5:5:java.lang.String com.truid.android.api.Session.getAPIToken():85:85 -> a
-    5:5:void runIDtoSelfieMatching$sdk_release(kotlin.jvm.functions.Function1,kotlin.jvm.functions.Function1):175 -> a
-    6:6:void runIDtoSelfieMatching$sdk_release(kotlin.jvm.functions.Function1,kotlin.jvm.functions.Function1):175:175 -> a
+    5:5:void runIDtoSelfieMatching$sdk_release(kotlin.jvm.functions.Function1,kotlin.jvm.functions.Function1):179 -> a
+    6:6:void runIDtoSelfieMatching$sdk_release(kotlin.jvm.functions.Function1,kotlin.jvm.functions.Function1):179:179 -> a
     7:7:java.lang.String com.truid.android.api.Session.getSessionID():95:95 -> a
-    7:7:void runIDtoSelfieMatching$sdk_release(kotlin.jvm.functions.Function1,kotlin.jvm.functions.Function1):176 -> a
-    8:24:void runIDtoSelfieMatching$sdk_release(kotlin.jvm.functions.Function1,kotlin.jvm.functions.Function1):176:192 -> a
+    7:7:void runIDtoSelfieMatching$sdk_release(kotlin.jvm.functions.Function1,kotlin.jvm.functions.Function1):180 -> a
+    8:24:void runIDtoSelfieMatching$sdk_release(kotlin.jvm.functions.Function1,kotlin.jvm.functions.Function1):180:196 -> a
     25:25:java.lang.String com.truid.android.api.Session.getAPIToken():85:85 -> a
     25:25:void uploadAuthenticationFrame$sdk_release(android.graphics.Bitmap,kotlin.jvm.functions.Function1,kotlin.jvm.functions.Function1):94 -> a
     26:26:java.lang.String com.truid.android.api.Session.getSessionID():95:95 -> a
@@ -1568,7 +1568,10 @@ com.truid.android.api.DocumentCapture -> b.m:
     91:91:void runOCR$sdk_release(java.lang.String,java.lang.String,kotlin.jvm.functions.Function1,kotlin.jvm.functions.Function1):133:133 -> a
     92:92:java.lang.String com.truid.android.api.Session.getSessionID():95:95 -> a
     92:92:void runOCR$sdk_release(java.lang.String,java.lang.String,kotlin.jvm.functions.Function1,kotlin.jvm.functions.Function1):134 -> a
-    93:124:void runOCR$sdk_release(java.lang.String,java.lang.String,kotlin.jvm.functions.Function1,kotlin.jvm.functions.Function1):134:165 -> a
+    93:94:void runOCR$sdk_release(java.lang.String,java.lang.String,kotlin.jvm.functions.Function1,kotlin.jvm.functions.Function1):134:135 -> a
+    95:95:java.lang.Integer com.truid.android.api.Session.getApplicationId():153:153 -> a
+    95:95:void runOCR$sdk_release(java.lang.String,java.lang.String,kotlin.jvm.functions.Function1,kotlin.jvm.functions.Function1):137 -> a
+    96:127:void runOCR$sdk_release(java.lang.String,java.lang.String,kotlin.jvm.functions.Function1,kotlin.jvm.functions.Function1):138:169 -> a
     1:1:java.lang.String com.truid.android.api.Session.getAPIToken():85:85 -> b
     1:1:void uploadBackFrame$sdk_release(android.graphics.Bitmap,kotlin.jvm.functions.Function1,kotlin.jvm.functions.Function1):63 -> b
     2:2:java.lang.String com.truid.android.api.Session.getSessionID():95:95 -> b
@@ -1584,21 +1587,21 @@ com.truid.android.api.DocumentCapture$runIDtoSelfieMatching$3 -> b.h:
 # {"id":"sourceFile","fileName":"DocumentCapture.kt"}
     kotlin.jvm.functions.Function1 $onSuccess -> a
     kotlin.jvm.functions.Function1 $onError -> b
-    1:1:void <init>(kotlin.jvm.functions.Function1,kotlin.jvm.functions.Function1):178:178 -> <init>
-    1:1:void onError(com.androidnetworking.error.ANError):188:188 -> onError
-    1:3:void onResponse(org.json.JSONObject):180:182 -> onResponse
-    4:7:void onResponse(org.json.JSONObject):181:184 -> onResponse
+    1:1:void <init>(kotlin.jvm.functions.Function1,kotlin.jvm.functions.Function1):182:182 -> <init>
+    1:1:void onError(com.androidnetworking.error.ANError):192:192 -> onError
+    1:3:void onResponse(org.json.JSONObject):184:186 -> onResponse
+    4:7:void onResponse(org.json.JSONObject):185:188 -> onResponse
 com.truid.android.api.DocumentCapture$runOCR$3 -> b.i:
 # {"id":"sourceFile","fileName":"DocumentCapture.kt"}
     kotlin.jvm.functions.Function1 $onSuccess -> a
     kotlin.jvm.functions.Function1 $onError -> b
-    1:1:void <init>(kotlin.jvm.functions.Function1,kotlin.jvm.functions.Function1):144:144 -> <init>
-    1:2:void onError(com.androidnetworking.error.ANError):160:161 -> onError
-    1:4:void onResponse(org.json.JSONObject):147:150 -> onResponse
-    5:9:void onResponse(org.json.JSONObject):149:153 -> onResponse
+    1:1:void <init>(kotlin.jvm.functions.Function1,kotlin.jvm.functions.Function1):148:148 -> <init>
+    1:2:void onError(com.androidnetworking.error.ANError):164:165 -> onError
+    1:4:void onResponse(org.json.JSONObject):151:154 -> onResponse
+    5:9:void onResponse(org.json.JSONObject):153:157 -> onResponse
     10:10:kotlin.jvm.functions.Function0 com.truid.android.api.DocumentCapture.getEndFlow():19:19 -> onResponse
-    10:10:void onResponse(org.json.JSONObject):154 -> onResponse
-    11:12:void onResponse(org.json.JSONObject):154:155 -> onResponse
+    10:10:void onResponse(org.json.JSONObject):158 -> onResponse
+    11:12:void onResponse(org.json.JSONObject):158:159 -> onResponse
 com.truid.android.api.DocumentCapture$uploadAuthenticationFrame$3 -> b.j:
 # {"id":"sourceFile","fileName":"DocumentCapture.kt"}
     kotlin.jvm.functions.Function1 $onSuccess -> a
@@ -1667,115 +1670,115 @@ com.truid.android.api.FaceDetection$uploadStraightFaceFrame$3 -> b.o:
 com.truid.android.api.FingerprintDetection -> b.t:
 # {"id":"sourceFile","fileName":"FingerprintDetection.kt"}
     kotlin.jvm.functions.Function0 onBiometricFail -> a
-    1:1:void <clinit>():17:17 -> <clinit>
-    1:1:kotlin.Unit onBiometricFail$lambda$0():17:17 -> a
+    1:1:void <clinit>():18:18 -> <clinit>
+    1:1:kotlin.Unit onBiometricFail$lambda$0():18:18 -> a
     2:2:java.lang.String com.truid.android.api.Session.getAPIToken():85:85 -> a
-    2:2:void matchFingerPrints$sdk_release(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):169 -> a
+    2:2:void matchFingerPrints$sdk_release(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):173 -> a
     3:3:java.lang.String com.truid.android.api.Session.getSessionID():95:95 -> a
-    3:3:void matchFingerPrints$sdk_release(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):169 -> a
-    4:4:void matchFingerPrints$sdk_release(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):170:170 -> a
+    3:3:void matchFingerPrints$sdk_release(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):173 -> a
+    4:4:void matchFingerPrints$sdk_release(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):174:174 -> a
     5:5:java.lang.String com.truid.android.api.Session.getAPIToken():85:85 -> a
-    5:5:void matchFingerPrints$sdk_release(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):171 -> a
-    6:6:void matchFingerPrints$sdk_release(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):171:171 -> a
+    5:5:void matchFingerPrints$sdk_release(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):175 -> a
+    6:6:void matchFingerPrints$sdk_release(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):175:175 -> a
     7:7:java.lang.String com.truid.android.api.Session.getSessionID():95:95 -> a
-    7:7:void matchFingerPrints$sdk_release(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):172 -> a
-    8:8:void matchFingerPrints$sdk_release(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):172:172 -> a
-    9:9:java.lang.String com.truid.android.api.Session.getCurrentApplicant():153:153 -> a
-    9:9:void matchFingerPrints$sdk_release(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):173 -> a
-    10:12:void matchFingerPrints$sdk_release(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):173:175 -> a
+    7:7:void matchFingerPrints$sdk_release(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):176 -> a
+    8:8:void matchFingerPrints$sdk_release(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):176:176 -> a
+    9:9:java.lang.Integer com.truid.android.api.Session.getApplicationId():153:153 -> a
+    9:9:void matchFingerPrints$sdk_release(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):177 -> a
+    10:12:void matchFingerPrints$sdk_release(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):177:179 -> a
     13:13:java.lang.String com.truid.android.api.Session.getAPIToken():85:85 -> a
-    13:13:void uploadFingerprintCaptureHand$sdk_release(android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,int,int,int,int,java.lang.Integer,int,java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):35 -> a
+    13:13:void uploadFingerprintCaptureHand$sdk_release(android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,int,int,int,int,java.lang.Integer,int,java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):36 -> a
     14:14:java.lang.String com.truid.android.api.Session.getSessionID():95:95 -> a
-    14:14:void uploadFingerprintCaptureHand$sdk_release(android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,int,int,int,int,java.lang.Integer,int,java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):35 -> a
+    14:14:void uploadFingerprintCaptureHand$sdk_release(android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,int,int,int,int,java.lang.Integer,int,java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):36 -> a
     15:15:java.lang.String com.truid.android.api.Session.getAPIToken():85:85 -> a
-    15:15:void uploadFingerprintCaptureHand$sdk_release(android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,int,int,int,int,java.lang.Integer,int,java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):36 -> a
-    16:17:void uploadFingerprintCaptureHand$sdk_release(android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,int,int,int,int,java.lang.Integer,int,java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):36:37 -> a
+    15:15:void uploadFingerprintCaptureHand$sdk_release(android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,int,int,int,int,java.lang.Integer,int,java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):37 -> a
+    16:17:void uploadFingerprintCaptureHand$sdk_release(android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,int,int,int,int,java.lang.Integer,int,java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):37:38 -> a
     18:18:java.lang.String com.truid.android.api.Session.getAPIToken():85:85 -> a
-    18:18:void uploadFingerprintCaptureHand$sdk_release(android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,int,int,int,int,java.lang.Integer,int,java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):38 -> a
-    19:19:void uploadFingerprintCaptureHand$sdk_release(android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,int,int,int,int,java.lang.Integer,int,java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):38:38 -> a
+    18:18:void uploadFingerprintCaptureHand$sdk_release(android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,int,int,int,int,java.lang.Integer,int,java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):39 -> a
+    19:19:void uploadFingerprintCaptureHand$sdk_release(android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,int,int,int,int,java.lang.Integer,int,java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):39:39 -> a
     20:20:java.lang.String com.truid.android.api.Session.getSessionID():95:95 -> a
-    20:20:void uploadFingerprintCaptureHand$sdk_release(android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,int,int,int,int,java.lang.Integer,int,java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):39 -> a
-    21:21:void uploadFingerprintCaptureHand$sdk_release(android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,int,int,int,int,java.lang.Integer,int,java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):39:39 -> a
-    22:22:java.lang.String com.truid.android.vision.UtilsKt.bitmapToBase64EncodedJPEG$default(android.graphics.Bitmap,int,int,java.lang.Object):300:300 -> a
-    22:22:void uploadFingerprintCaptureHand$sdk_release(android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,int,int,int,int,java.lang.Integer,int,java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):40 -> a
-    23:30:void uploadFingerprintCaptureHand$sdk_release(android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,int,int,int,int,java.lang.Integer,int,java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):40:47 -> a
-    31:31:boolean com.truid.android.api.Session.getEnableJPEG():150:150 -> a
-    31:31:void uploadFingerprintCaptureHand$sdk_release(android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,int,int,int,int,java.lang.Integer,int,java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):50 -> a
-    32:32:java.lang.String com.truid.android.vision.UtilsKt.bitmapToBase64EncodedJPEG$default(android.graphics.Bitmap,int,int,java.lang.Object):300:300 -> a
-    32:32:void uploadFingerprintCaptureHand$sdk_release(android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,int,int,int,int,java.lang.Integer,int,java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):51 -> a
-    33:33:void uploadFingerprintCaptureHand$sdk_release(android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,int,int,int,int,java.lang.Integer,int,java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):51:51 -> a
-    34:34:java.lang.String com.truid.android.vision.UtilsKt.bitmapToBase64EncodedJPEG$default(android.graphics.Bitmap,int,int,java.lang.Object):300:300 -> a
-    34:34:void uploadFingerprintCaptureHand$sdk_release(android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,int,int,int,int,java.lang.Integer,int,java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):52 -> a
-    35:35:void uploadFingerprintCaptureHand$sdk_release(android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,int,int,int,int,java.lang.Integer,int,java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):52:52 -> a
-    36:36:java.lang.String com.truid.android.vision.UtilsKt.bitmapToBase64EncodedJPEG$default(android.graphics.Bitmap,int,int,java.lang.Object):300:300 -> a
-    36:36:void uploadFingerprintCaptureHand$sdk_release(android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,int,int,int,int,java.lang.Integer,int,java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):53 -> a
-    37:37:void uploadFingerprintCaptureHand$sdk_release(android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,int,int,int,int,java.lang.Integer,int,java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):53:53 -> a
-    38:38:java.lang.String com.truid.android.vision.UtilsKt.bitmapToBase64EncodedJPEG$default(android.graphics.Bitmap,int,int,java.lang.Object):300:300 -> a
-    38:38:void uploadFingerprintCaptureHand$sdk_release(android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,int,int,int,int,java.lang.Integer,int,java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):54 -> a
-    39:39:void uploadFingerprintCaptureHand$sdk_release(android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,int,int,int,int,java.lang.Integer,int,java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):54:54 -> a
-    40:40:boolean com.truid.android.api.Session.getEnableISO():148:148 -> a
-    40:40:void uploadFingerprintCaptureHand$sdk_release(android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,int,int,int,int,java.lang.Integer,int,java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):57 -> a
-    41:42:void uploadFingerprintCaptureHand$sdk_release(android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,int,int,int,int,java.lang.Integer,int,java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):58:59 -> a
-    43:43:boolean com.truid.android.api.Session.getEnableWSQ():155:155 -> a
-    43:43:void uploadFingerprintCaptureHand$sdk_release(android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,int,int,int,int,java.lang.Integer,int,java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):62 -> a
-    44:45:void uploadFingerprintCaptureHand$sdk_release(android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,int,int,int,int,java.lang.Integer,int,java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):63:64 -> a
-    46:46:java.lang.String com.truid.android.vision.UtilsKt.bitmapToBase64EncodedJPEG$default(android.graphics.Bitmap,int,int,java.lang.Object):300:300 -> a
-    46:46:void uploadFingerprintCaptureHand$sdk_release(android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,int,int,int,int,java.lang.Integer,int,java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):71 -> a
-    47:78:void uploadFingerprintCaptureHand$sdk_release(android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,int,int,int,int,java.lang.Integer,int,java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):71:102 -> a
-    79:79:java.lang.String com.truid.android.api.Session.getAPIToken():85:85 -> a
-    79:79:void uploadFingerprintCaptureThumb$sdk_release(android.graphics.Bitmap,android.graphics.Bitmap,java.io.File,java.io.File,int,int,java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):117 -> a
-    80:80:java.lang.String com.truid.android.api.Session.getSessionID():95:95 -> a
-    80:80:void uploadFingerprintCaptureThumb$sdk_release(android.graphics.Bitmap,android.graphics.Bitmap,java.io.File,java.io.File,int,int,java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):117 -> a
-    81:81:void uploadFingerprintCaptureThumb$sdk_release(android.graphics.Bitmap,android.graphics.Bitmap,java.io.File,java.io.File,int,int,java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):118:118 -> a
-    82:82:java.lang.String com.truid.android.api.Session.getAPIToken():85:85 -> a
-    82:82:void uploadFingerprintCaptureThumb$sdk_release(android.graphics.Bitmap,android.graphics.Bitmap,java.io.File,java.io.File,int,int,java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):119 -> a
-    83:83:void uploadFingerprintCaptureThumb$sdk_release(android.graphics.Bitmap,android.graphics.Bitmap,java.io.File,java.io.File,int,int,java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):119:119 -> a
-    84:84:java.lang.String com.truid.android.api.Session.getSessionID():95:95 -> a
-    84:84:void uploadFingerprintCaptureThumb$sdk_release(android.graphics.Bitmap,android.graphics.Bitmap,java.io.File,java.io.File,int,int,java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):120 -> a
-    85:85:void uploadFingerprintCaptureThumb$sdk_release(android.graphics.Bitmap,android.graphics.Bitmap,java.io.File,java.io.File,int,int,java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):120:120 -> a
-    86:86:java.lang.String com.truid.android.vision.UtilsKt.bitmapToBase64EncodedJPEG$default(android.graphics.Bitmap,int,int,java.lang.Object):300:300 -> a
-    86:86:void uploadFingerprintCaptureThumb$sdk_release(android.graphics.Bitmap,android.graphics.Bitmap,java.io.File,java.io.File,int,int,java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):121 -> a
-    87:92:void uploadFingerprintCaptureThumb$sdk_release(android.graphics.Bitmap,android.graphics.Bitmap,java.io.File,java.io.File,int,int,java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):121:126 -> a
-    93:93:boolean com.truid.android.api.Session.getEnableJPEG():150:150 -> a
-    93:93:void uploadFingerprintCaptureThumb$sdk_release(android.graphics.Bitmap,android.graphics.Bitmap,java.io.File,java.io.File,int,int,java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):128 -> a
-    94:94:java.lang.String com.truid.android.vision.UtilsKt.bitmapToBase64EncodedJPEG$default(android.graphics.Bitmap,int,int,java.lang.Object):300:300 -> a
-    94:94:void uploadFingerprintCaptureThumb$sdk_release(android.graphics.Bitmap,android.graphics.Bitmap,java.io.File,java.io.File,int,int,java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):129 -> a
-    95:95:void uploadFingerprintCaptureThumb$sdk_release(android.graphics.Bitmap,android.graphics.Bitmap,java.io.File,java.io.File,int,int,java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):129:129 -> a
-    96:96:boolean com.truid.android.api.Session.getEnableISO():148:148 -> a
-    96:96:void uploadFingerprintCaptureThumb$sdk_release(android.graphics.Bitmap,android.graphics.Bitmap,java.io.File,java.io.File,int,int,java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):132 -> a
-    97:97:void uploadFingerprintCaptureThumb$sdk_release(android.graphics.Bitmap,android.graphics.Bitmap,java.io.File,java.io.File,int,int,java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):133:133 -> a
-    98:98:boolean com.truid.android.api.Session.getEnableWSQ():155:155 -> a
-    98:98:void uploadFingerprintCaptureThumb$sdk_release(android.graphics.Bitmap,android.graphics.Bitmap,java.io.File,java.io.File,int,int,java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):137 -> a
-    99:123:void uploadFingerprintCaptureThumb$sdk_release(android.graphics.Bitmap,android.graphics.Bitmap,java.io.File,java.io.File,int,int,java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):138:162 -> a
+    20:20:void uploadFingerprintCaptureHand$sdk_release(android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,int,int,int,int,java.lang.Integer,int,java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):40 -> a
+    21:180:void uploadFingerprintCaptureHand$sdk_release(android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,int,int,int,int,java.lang.Integer,int,java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):40:199 -> a
+    181:181:java.lang.String com.truid.android.vision.UtilsKt.bitmapToBase64EncodedJPEG$default(android.graphics.Bitmap,int,int,java.lang.Object):300:300 -> a
+    181:181:void uploadFingerprintCaptureHand$sdk_release(android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,int,int,int,int,java.lang.Integer,int,java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):43 -> a
+    182:192:void uploadFingerprintCaptureHand$sdk_release(android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,int,int,int,int,java.lang.Integer,int,java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):41:51 -> a
+    193:193:boolean com.truid.android.api.Session.getEnableJPEG():150:150 -> a
+    193:193:void uploadFingerprintCaptureHand$sdk_release(android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,int,int,int,int,java.lang.Integer,int,java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):54 -> a
+    194:194:java.lang.String com.truid.android.vision.UtilsKt.bitmapToBase64EncodedJPEG$default(android.graphics.Bitmap,int,int,java.lang.Object):300:300 -> a
+    194:194:void uploadFingerprintCaptureHand$sdk_release(android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,int,int,int,int,java.lang.Integer,int,java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):55 -> a
+    195:195:void uploadFingerprintCaptureHand$sdk_release(android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,int,int,int,int,java.lang.Integer,int,java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):55:55 -> a
+    196:196:java.lang.String com.truid.android.vision.UtilsKt.bitmapToBase64EncodedJPEG$default(android.graphics.Bitmap,int,int,java.lang.Object):300:300 -> a
+    196:196:void uploadFingerprintCaptureHand$sdk_release(android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,int,int,int,int,java.lang.Integer,int,java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):56 -> a
+    197:197:void uploadFingerprintCaptureHand$sdk_release(android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,int,int,int,int,java.lang.Integer,int,java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):56:56 -> a
+    198:198:java.lang.String com.truid.android.vision.UtilsKt.bitmapToBase64EncodedJPEG$default(android.graphics.Bitmap,int,int,java.lang.Object):300:300 -> a
+    198:198:void uploadFingerprintCaptureHand$sdk_release(android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,int,int,int,int,java.lang.Integer,int,java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):57 -> a
+    199:199:void uploadFingerprintCaptureHand$sdk_release(android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,int,int,int,int,java.lang.Integer,int,java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):57:57 -> a
+    200:200:java.lang.String com.truid.android.vision.UtilsKt.bitmapToBase64EncodedJPEG$default(android.graphics.Bitmap,int,int,java.lang.Object):300:300 -> a
+    200:200:void uploadFingerprintCaptureHand$sdk_release(android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,int,int,int,int,java.lang.Integer,int,java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):58 -> a
+    201:201:void uploadFingerprintCaptureHand$sdk_release(android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,int,int,int,int,java.lang.Integer,int,java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):58:58 -> a
+    202:202:boolean com.truid.android.api.Session.getEnableISO():148:148 -> a
+    202:202:void uploadFingerprintCaptureHand$sdk_release(android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,int,int,int,int,java.lang.Integer,int,java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):61 -> a
+    203:204:void uploadFingerprintCaptureHand$sdk_release(android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,int,int,int,int,java.lang.Integer,int,java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):62:63 -> a
+    205:205:boolean com.truid.android.api.Session.getEnableWSQ():155:155 -> a
+    205:205:void uploadFingerprintCaptureHand$sdk_release(android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,int,int,int,int,java.lang.Integer,int,java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):66 -> a
+    206:207:void uploadFingerprintCaptureHand$sdk_release(android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,int,int,int,int,java.lang.Integer,int,java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):67:68 -> a
+    208:208:java.lang.String com.truid.android.vision.UtilsKt.bitmapToBase64EncodedJPEG$default(android.graphics.Bitmap,int,int,java.lang.Object):300:300 -> a
+    208:208:void uploadFingerprintCaptureHand$sdk_release(android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,int,int,int,int,java.lang.Integer,int,java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):75 -> a
+    209:240:void uploadFingerprintCaptureHand$sdk_release(android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,android.graphics.Bitmap,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,java.io.File,int,int,int,int,java.lang.Integer,int,java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):75:106 -> a
+    241:241:java.lang.String com.truid.android.api.Session.getAPIToken():85:85 -> a
+    241:241:void uploadFingerprintCaptureThumb$sdk_release(android.graphics.Bitmap,android.graphics.Bitmap,java.io.File,java.io.File,int,int,java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):121 -> a
+    242:242:java.lang.String com.truid.android.api.Session.getSessionID():95:95 -> a
+    242:242:void uploadFingerprintCaptureThumb$sdk_release(android.graphics.Bitmap,android.graphics.Bitmap,java.io.File,java.io.File,int,int,java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):121 -> a
+    243:243:void uploadFingerprintCaptureThumb$sdk_release(android.graphics.Bitmap,android.graphics.Bitmap,java.io.File,java.io.File,int,int,java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):122:122 -> a
+    244:244:java.lang.String com.truid.android.api.Session.getAPIToken():85:85 -> a
+    244:244:void uploadFingerprintCaptureThumb$sdk_release(android.graphics.Bitmap,android.graphics.Bitmap,java.io.File,java.io.File,int,int,java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):123 -> a
+    245:245:void uploadFingerprintCaptureThumb$sdk_release(android.graphics.Bitmap,android.graphics.Bitmap,java.io.File,java.io.File,int,int,java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):123:123 -> a
+    246:246:java.lang.String com.truid.android.api.Session.getSessionID():95:95 -> a
+    246:246:void uploadFingerprintCaptureThumb$sdk_release(android.graphics.Bitmap,android.graphics.Bitmap,java.io.File,java.io.File,int,int,java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):124 -> a
+    247:247:void uploadFingerprintCaptureThumb$sdk_release(android.graphics.Bitmap,android.graphics.Bitmap,java.io.File,java.io.File,int,int,java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):124:124 -> a
+    248:248:java.lang.String com.truid.android.vision.UtilsKt.bitmapToBase64EncodedJPEG$default(android.graphics.Bitmap,int,int,java.lang.Object):300:300 -> a
+    248:248:void uploadFingerprintCaptureThumb$sdk_release(android.graphics.Bitmap,android.graphics.Bitmap,java.io.File,java.io.File,int,int,java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):125 -> a
+    249:254:void uploadFingerprintCaptureThumb$sdk_release(android.graphics.Bitmap,android.graphics.Bitmap,java.io.File,java.io.File,int,int,java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):125:130 -> a
+    255:255:boolean com.truid.android.api.Session.getEnableJPEG():150:150 -> a
+    255:255:void uploadFingerprintCaptureThumb$sdk_release(android.graphics.Bitmap,android.graphics.Bitmap,java.io.File,java.io.File,int,int,java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):132 -> a
+    256:256:java.lang.String com.truid.android.vision.UtilsKt.bitmapToBase64EncodedJPEG$default(android.graphics.Bitmap,int,int,java.lang.Object):300:300 -> a
+    256:256:void uploadFingerprintCaptureThumb$sdk_release(android.graphics.Bitmap,android.graphics.Bitmap,java.io.File,java.io.File,int,int,java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):133 -> a
+    257:257:void uploadFingerprintCaptureThumb$sdk_release(android.graphics.Bitmap,android.graphics.Bitmap,java.io.File,java.io.File,int,int,java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):133:133 -> a
+    258:258:boolean com.truid.android.api.Session.getEnableISO():148:148 -> a
+    258:258:void uploadFingerprintCaptureThumb$sdk_release(android.graphics.Bitmap,android.graphics.Bitmap,java.io.File,java.io.File,int,int,java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):136 -> a
+    259:259:void uploadFingerprintCaptureThumb$sdk_release(android.graphics.Bitmap,android.graphics.Bitmap,java.io.File,java.io.File,int,int,java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):137:137 -> a
+    260:260:boolean com.truid.android.api.Session.getEnableWSQ():155:155 -> a
+    260:260:void uploadFingerprintCaptureThumb$sdk_release(android.graphics.Bitmap,android.graphics.Bitmap,java.io.File,java.io.File,int,int,java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):141 -> a
+    261:285:void uploadFingerprintCaptureThumb$sdk_release(android.graphics.Bitmap,android.graphics.Bitmap,java.io.File,java.io.File,int,int,java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):142:166 -> a
 com.truid.android.api.FingerprintDetection$matchFingerPrints$3 -> b.q:
 # {"id":"sourceFile","fileName":"FingerprintDetection.kt"}
     kotlin.jvm.functions.Function0 $onSuccess -> a
     kotlin.jvm.functions.Function1 $onError -> b
-    1:1:void <init>(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):175:175 -> <init>
-    1:2:void onError(com.androidnetworking.error.ANError):187:188 -> onError
-    1:4:void onResponse(org.json.JSONObject):179:182 -> onResponse
-    5:5:kotlin.jvm.functions.Function0 com.truid.android.api.FingerprintDetection.getOnBiometricFail():17:17 -> onResponse
-    5:5:void onResponse(org.json.JSONObject):183 -> onResponse
-    6:6:void onResponse(org.json.JSONObject):183:183 -> onResponse
+    1:1:void <init>(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):179:179 -> <init>
+    1:2:void onError(com.androidnetworking.error.ANError):191:192 -> onError
+    1:4:void onResponse(org.json.JSONObject):183:186 -> onResponse
+    5:5:kotlin.jvm.functions.Function0 com.truid.android.api.FingerprintDetection.getOnBiometricFail():18:18 -> onResponse
+    5:5:void onResponse(org.json.JSONObject):187 -> onResponse
+    6:6:void onResponse(org.json.JSONObject):187:187 -> onResponse
 com.truid.android.api.FingerprintDetection$uploadFingerprintCaptureHand$3 -> b.r:
 # {"id":"sourceFile","fileName":"FingerprintDetection.kt"}
     java.lang.String $hand -> a
     kotlin.jvm.functions.Function0 $onSuccess -> b
     kotlin.jvm.functions.Function1 $onError -> c
-    1:1:void <init>(java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):79:79 -> <init>
-    1:2:kotlin.Unit onResponse$lambda$0(kotlin.jvm.functions.Function0):84:85 -> a
-    3:4:kotlin.Unit onResponse$lambda$1(kotlin.jvm.functions.Function1,java.lang.String):86:87 -> a
-    1:2:void onError(com.androidnetworking.error.ANError):94:95 -> onError
-    1:1:java.lang.String com.truid.android.api.Session.getCurrentApplicant():153:153 -> onResponse
-    1:1:void onResponse(org.json.JSONObject):82 -> onResponse
-    2:9:void onResponse(org.json.JSONObject):82:89 -> onResponse
+    1:1:void <init>(java.lang.String,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):83:83 -> <init>
+    1:2:kotlin.Unit onResponse$lambda$0(kotlin.jvm.functions.Function0):88:89 -> a
+    3:4:kotlin.Unit onResponse$lambda$1(kotlin.jvm.functions.Function1,java.lang.String):90:91 -> a
+    1:2:void onError(com.androidnetworking.error.ANError):98:99 -> onError
+    1:1:java.lang.Integer com.truid.android.api.Session.getApplicationId():153:153 -> onResponse
+    1:1:void onResponse(org.json.JSONObject):86 -> onResponse
+    2:9:void onResponse(org.json.JSONObject):86:93 -> onResponse
 com.truid.android.api.FingerprintDetection$uploadFingerprintCaptureThumb$3 -> b.s:
 # {"id":"sourceFile","fileName":"FingerprintDetection.kt"}
     kotlin.jvm.functions.Function0 $onSuccess -> a
     kotlin.jvm.functions.Function1 $onError -> b
-    1:1:void <init>(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):143:143 -> <init>
-    1:5:void onError(com.androidnetworking.error.ANError):153:157 -> onError
-    1:1:void onResponse(org.json.JSONObject):149:149 -> onResponse
+    1:1:void <init>(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function1):147:147 -> <init>
+    1:5:void onError(com.androidnetworking.error.ANError):157:161 -> onError
+    1:1:void onResponse(org.json.JSONObject):153:153 -> onResponse
 com.truid.android.api.Interceptor.NetworkErrorInterceptor -> c.a:
 # {"id":"sourceFile","fileName":"NetworkErrorInterceptor.kt"}
     kotlin.jvm.functions.Function0 onNetworkError -> a
@@ -1971,7 +1974,7 @@ com.truid.android.api.Session -> b.D:
     boolean fingerprintSelectionRequired -> v
     boolean enableISO -> w
     boolean enableJPEG -> x
-    java.lang.String currentApplicant -> y
+    java.lang.Integer applicationId -> y
     boolean enableWSQ -> z
     1:18:void <clinit>():65:82 -> <clinit>
     19:113:void <clinit>():64:158 -> <clinit>
@@ -4797,18 +4800,18 @@ com.truid.android.ui.components.ComposableSingletons$TopBarKt -> i.h:
       # {"id":"com.android.tools.r8.residualsignature","signature":"Landroidx/compose/runtime/internal/ComposableLambda;"}
     kotlin.jvm.functions.Function2 lambda$-1911111802 -> e
       # {"id":"com.android.tools.r8.residualsignature","signature":"Landroidx/compose/runtime/internal/ComposableLambda;"}
-    1:7:void <clinit>():71:77 -> <clinit>
-    8:35:void <clinit>():64:91 -> <clinit>
-    1:1:kotlin.Unit lambda_1240124665$lambda$3(androidx.compose.runtime.Composer,int):65:65 -> a
-    2:2:kotlin.Unit lambda_969395429$lambda$0(androidx.compose.foundation.layout.RowScope,androidx.compose.runtime.Composer,int):72:72 -> a
-    3:5:kotlin.Unit lambda_969395429$lambda$0(androidx.compose.foundation.layout.RowScope,androidx.compose.runtime.Composer,int):71:73 -> a
-    1:1:kotlin.Unit lambda_76543480$lambda$2(androidx.compose.runtime.Composer,int):64:64 -> b
-    2:2:kotlin.Unit lambda__998409497$lambda$1(androidx.compose.foundation.layout.RowScope,androidx.compose.runtime.Composer,int):78:78 -> b
-    3:5:kotlin.Unit lambda__998409497$lambda$1(androidx.compose.foundation.layout.RowScope,androidx.compose.runtime.Composer,int):77:79 -> b
-    1:35:kotlin.Unit lambda__1911111802$lambda$4(androidx.compose.runtime.Composer,int):93:127 -> c
-    36:37:kotlin.Unit lambda__1911111802$lambda$4(androidx.compose.runtime.Composer,int):97:98 -> c
-    38:38:kotlin.Unit lambda__1911111802$lambda$4(androidx.compose.runtime.Composer,int):92:92 -> c
-    39:48:kotlin.Unit lambda__1911111802$lambda$4(androidx.compose.runtime.Composer,int):91:100 -> c
+    1:7:void <clinit>():74:80 -> <clinit>
+    8:35:void <clinit>():67:94 -> <clinit>
+    1:1:kotlin.Unit lambda_1240124665$lambda$3(androidx.compose.runtime.Composer,int):68:68 -> a
+    2:2:kotlin.Unit lambda_969395429$lambda$0(androidx.compose.foundation.layout.RowScope,androidx.compose.runtime.Composer,int):75:75 -> a
+    3:5:kotlin.Unit lambda_969395429$lambda$0(androidx.compose.foundation.layout.RowScope,androidx.compose.runtime.Composer,int):74:76 -> a
+    1:1:kotlin.Unit lambda_76543480$lambda$2(androidx.compose.runtime.Composer,int):67:67 -> b
+    2:2:kotlin.Unit lambda__998409497$lambda$1(androidx.compose.foundation.layout.RowScope,androidx.compose.runtime.Composer,int):81:81 -> b
+    3:5:kotlin.Unit lambda__998409497$lambda$1(androidx.compose.foundation.layout.RowScope,androidx.compose.runtime.Composer,int):80:82 -> b
+    1:36:kotlin.Unit lambda__1911111802$lambda$4(androidx.compose.runtime.Composer,int):96:131 -> c
+    37:38:kotlin.Unit lambda__1911111802$lambda$4(androidx.compose.runtime.Composer,int):100:101 -> c
+    39:39:kotlin.Unit lambda__1911111802$lambda$4(androidx.compose.runtime.Composer,int):95:95 -> c
+    40:49:kotlin.Unit lambda__1911111802$lambda$4(androidx.compose.runtime.Composer,int):94:103 -> c
 com.truid.android.ui.components.HeaderKt -> i.i:
 # {"id":"sourceFile","fileName":"Header.kt"}
     1:1:kotlin.Unit Header$lambda$1(java.lang.String,int,androidx.compose.runtime.Composer,int):0:0 -> a
@@ -4874,179 +4877,179 @@ com.truid.android.ui.components.TopBarKt -> i.k:
 # {"id":"sourceFile","fileName":"TopBar.kt"}
     1:1:kotlin.Unit TopBar_FU0evQE$lambda$20(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,int,int,androidx.compose.runtime.Composer,int):0:0 -> a
       # {"id":"com.android.tools.r8.residualsignature","signature":"(Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;JZILx/b;IILandroidx/compose/runtime/Composer;I)Lkotlin/Unit;"}
-    2:2:kotlin.Unit TopBar_FU0evQE$lambda$1$lambda$0():44:44 -> a
-    3:3:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):50:50 -> a
+    2:2:kotlin.Unit TopBar_FU0evQE$lambda$1$lambda$0():47:47 -> a
+    3:3:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):53:53 -> a
     3:3:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
       # {"id":"com.android.tools.r8.synthesized"}
       # {"id":"com.android.tools.r8.residualsignature","signature":"(Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;JZILx/b;Landroidx/compose/runtime/Composer;II)V"}
-    4:92:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):42:130 -> a
-    4:92:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
-    93:185:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):44:136 -> a
-    93:185:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
-    186:186:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):45:45 -> a
-    186:186:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
-    187:187:long com.truid.android.ui.theme.ColorKt.getTruIdColor():6:6 -> a
-    187:187:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):46 -> a
-    187:187:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
-    188:286:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):42:140 -> a
-    188:286:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
-    287:378:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):51:142 -> a
-    287:378:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
-    379:474:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):51:146 -> a
-    379:474:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
-    475:567:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):56:148 -> a
-    475:567:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
-    568:663:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):56:151 -> a
-    568:663:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
-    664:780:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):60:176 -> a
-    664:780:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
-    781:781:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0:0 -> a
-    781:781:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
-      # {"id":"com.android.tools.r8.outlineCallsite","positions":{"1":3953,"2":3954,"3":3955,"4":3956,"5":3957},"outline":"La/c;a(Landroidx/compose/ui/node/ComposeUiNode$Companion;Landroidx/compose/runtime/Composer;Landroidx/compose/ui/layout/MeasurePolicy;Landroidx/compose/runtime/Composer;Landroidx/compose/runtime/CompositionLocalMap;)Lkotlin/jvm/functions/Function2;"}
-    962:962:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):181:181 -> a
-    962:962:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
-    963:963:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0:0 -> a
-    963:963:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
-      # {"id":"com.android.tools.r8.outlineCallsite","positions":{"1":3960,"2":3961,"3":3962,"4":3963},"outline":"La/d;a(ILandroidx/compose/runtime/Composer;ILkotlin/jvm/functions/Function2;)V"}
-    1149:1149:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):186:186 -> a
-    1149:1149:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
-    1150:1150:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):159:159 -> a
-    1150:1150:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
-    1151:1151:boolean TopBar_FU0evQE$lambda$5(androidx.compose.runtime.MutableState):283:283 -> a
-    1151:1151:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):61 -> a
-    1151:1151:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
-    1152:1281:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):61:190 -> a
-    1152:1281:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
-    1282:1411:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):63:192 -> a
-    1282:1411:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
-    1412:1424:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):63:75 -> a
-    1412:1424:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
-    1425:1425:kotlin.jvm.functions.Function2 com.truid.android.ui.components.ComposableSingletons$TopBarKt.getLambda$76543480$sdk_release():0:0 -> a
-    1425:1425:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):75 -> a
-    1425:1425:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
-    1426:1426:kotlin.jvm.functions.Function2 com.truid.android.ui.components.ComposableSingletons$TopBarKt.getLambda$1240124665$sdk_release():0:0 -> a
-    1426:1426:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):75 -> a
-    1426:1426:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
-    1427:1427:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):62:62 -> a
-    1427:1427:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
-    1428:1562:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):61:195 -> a
-    1428:1562:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
-    1563:1698:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):85:220 -> a
-    1563:1698:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
-    1699:1699:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0:0 -> a
-    1699:1699:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
-      # {"id":"com.android.tools.r8.outlineCallsite","positions":{"1":4001,"2":4002,"3":4003,"4":4004,"5":4005},"outline":"La/c;a(Landroidx/compose/ui/node/ComposeUiNode$Companion;Landroidx/compose/runtime/Composer;Landroidx/compose/ui/layout/MeasurePolicy;Landroidx/compose/runtime/Composer;Landroidx/compose/runtime/CompositionLocalMap;)Lkotlin/jvm/functions/Function2;"}
-    1924:1924:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):225:225 -> a
-    1924:1924:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
-    1925:1925:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0:0 -> a
-    1925:1925:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
-      # {"id":"com.android.tools.r8.outlineCallsite","positions":{"1":4008,"2":4009,"3":4010,"4":4011},"outline":"La/d;a(ILandroidx/compose/runtime/Composer;ILkotlin/jvm/functions/Function2;)V"}
-    2155:2155:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):230:230 -> a
-    2155:2155:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
-    2156:2186:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):203:233 -> a
-    2156:2186:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
-    2187:2188:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):89:90 -> a
-    2187:2188:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
-    2189:2189:kotlin.jvm.functions.Function2 com.truid.android.ui.components.ComposableSingletons$TopBarKt.getLambda$-1911111802$sdk_release():0:0 -> a
-    2189:2189:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):90 -> a
-    2189:2189:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
-    2190:2337:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):87:234 -> a
-    2190:2337:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
-    2338:2468:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):105:235 -> a
-    2338:2468:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
-    2469:2619:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):106:256 -> a
-    2469:2619:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
-    2620:2620:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0:0 -> a
-    2620:2620:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
-      # {"id":"com.android.tools.r8.outlineCallsite","positions":{"1":4041,"2":4042,"3":4043,"4":4044,"5":4045},"outline":"La/c;a(Landroidx/compose/ui/node/ComposeUiNode$Companion;Landroidx/compose/runtime/Composer;Landroidx/compose/ui/layout/MeasurePolicy;Landroidx/compose/runtime/Composer;Landroidx/compose/runtime/CompositionLocalMap;)Lkotlin/jvm/functions/Function2;"}
-    2881:2881:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):261:261 -> a
-    2881:2881:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
-    2882:2882:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0:0 -> a
-    2882:2882:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
-      # {"id":"com.android.tools.r8.outlineCallsite","positions":{"1":4048,"2":4049,"3":4050,"4":4051},"outline":"La/d;a(ILandroidx/compose/runtime/Composer;ILkotlin/jvm/functions/Function2;)V"}
-    3148:3148:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):266:266 -> a
-    3148:3148:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
-    3149:3149:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):239:239 -> a
-    3149:3149:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
-    3150:3151:int com.truid.android.api.Session.getNumSteps$sdk_release():510:511 -> a
-    3150:3151:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):109 -> a
-    3150:3151:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
-    3152:3312:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):109:269 -> a
-    3152:3312:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
-    3313:3469:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):114:270 -> a
-    3313:3469:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
-    3470:3472:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):115:117 -> a
-    3470:3472:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
-    3473:3473:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):112:112 -> a
-    3473:3473:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
-    3474:3635:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):110:271 -> a
-    3474:3635:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
-    3636:3817:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):101:282 -> a
-    3636:3817:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
-    3818:3900:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):42:124 -> a
-    3818:3900:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
-    3953:3953:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):177:177 -> a
-    3954:3954:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):177:177 -> a
-    3955:3955:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):178:178 -> a
-    3956:3956:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):178:178 -> a
-    3957:3957:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):179:179 -> a
-    3960:3960:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):182:182 -> a
-    3961:3961:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):182:182 -> a
-    3962:3962:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):183:183 -> a
-    3963:3963:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):183:183 -> a
-    4001:4001:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):221:221 -> a
-    4002:4002:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):221:221 -> a
-    4003:4003:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):222:222 -> a
-    4004:4004:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):222:222 -> a
-    4005:4005:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):223:223 -> a
-    4008:4008:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):226:226 -> a
-    4009:4009:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):226:226 -> a
-    4010:4010:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):227:227 -> a
-    4011:4011:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):227:227 -> a
-    4041:4041:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):257:257 -> a
-    4042:4042:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):257:257 -> a
-    4043:4043:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):258:258 -> a
-    4044:4044:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):258:258 -> a
-    4045:4045:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):259:259 -> a
-    4048:4048:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):262:262 -> a
-    4049:4049:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):262:262 -> a
-    4050:4050:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):263:263 -> a
-    4051:4051:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):263:263 -> a
-    4052:4285:void TopBar_FU0evQE$lambda$6(androidx.compose.runtime.MutableState,boolean):51:284 -> a
-    4052:4285:kotlin.Unit TopBar_FU0evQE$lambda$19$lambda$10$lambda$9(androidx.compose.runtime.MutableState):63 -> a
-    4286:4286:kotlin.Unit TopBar_FU0evQE$lambda$19$lambda$10$lambda$9(androidx.compose.runtime.MutableState):63:63 -> a
-    4287:4287:kotlin.Unit TopBar_FU0evQE$lambda$8$lambda$7(com.truid.android.ui.utils.LayoutViewModel,androidx.compose.ui.layout.LayoutCoordinates):57:57 -> a
+    4:93:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):45:134 -> a
+    4:93:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
+    94:187:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):47:140 -> a
+    94:187:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
+    188:188:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):48:48 -> a
+    188:188:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
+    189:189:long com.truid.android.ui.theme.ColorKt.getTruIdColor():6:6 -> a
+    189:189:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):49 -> a
+    189:189:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
+    190:289:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):45:144 -> a
+    190:289:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
+    290:382:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):54:146 -> a
+    290:382:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
+    383:479:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):54:150 -> a
+    383:479:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
+    480:573:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):59:152 -> a
+    480:573:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
+    574:670:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):59:155 -> a
+    574:670:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
+    671:788:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):63:180 -> a
+    671:788:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
+    789:789:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0:0 -> a
+    789:789:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
+      # {"id":"com.android.tools.r8.outlineCallsite","positions":{"1":3994,"2":3995,"3":3996,"4":3997,"5":3998},"outline":"La/c;a(Landroidx/compose/ui/node/ComposeUiNode$Companion;Landroidx/compose/runtime/Composer;Landroidx/compose/ui/layout/MeasurePolicy;Landroidx/compose/runtime/Composer;Landroidx/compose/runtime/CompositionLocalMap;)Lkotlin/jvm/functions/Function2;"}
+    974:974:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):185:185 -> a
+    974:974:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
+    975:975:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0:0 -> a
+    975:975:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
+      # {"id":"com.android.tools.r8.outlineCallsite","positions":{"1":4001,"2":4002,"3":4003,"4":4004},"outline":"La/d;a(ILandroidx/compose/runtime/Composer;ILkotlin/jvm/functions/Function2;)V"}
+    1165:1165:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):190:190 -> a
+    1165:1165:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
+    1166:1166:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):163:163 -> a
+    1166:1166:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
+    1167:1167:boolean TopBar_FU0evQE$lambda$5(androidx.compose.runtime.MutableState):287:287 -> a
+    1167:1167:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):64 -> a
+    1167:1167:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
+    1168:1298:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):64:194 -> a
+    1168:1298:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
+    1299:1429:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):66:196 -> a
+    1299:1429:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
+    1430:1442:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):66:78 -> a
+    1430:1442:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
+    1443:1443:kotlin.jvm.functions.Function2 com.truid.android.ui.components.ComposableSingletons$TopBarKt.getLambda$76543480$sdk_release():0:0 -> a
+    1443:1443:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):78 -> a
+    1443:1443:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
+    1444:1444:kotlin.jvm.functions.Function2 com.truid.android.ui.components.ComposableSingletons$TopBarKt.getLambda$1240124665$sdk_release():0:0 -> a
+    1444:1444:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):78 -> a
+    1444:1444:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
+    1445:1445:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):65:65 -> a
+    1445:1445:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
+    1446:1581:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):64:199 -> a
+    1446:1581:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
+    1582:1718:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):88:224 -> a
+    1582:1718:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
+    1719:1719:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0:0 -> a
+    1719:1719:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
+      # {"id":"com.android.tools.r8.outlineCallsite","positions":{"1":4042,"2":4043,"3":4044,"4":4045,"5":4046},"outline":"La/c;a(Landroidx/compose/ui/node/ComposeUiNode$Companion;Landroidx/compose/runtime/Composer;Landroidx/compose/ui/layout/MeasurePolicy;Landroidx/compose/runtime/Composer;Landroidx/compose/runtime/CompositionLocalMap;)Lkotlin/jvm/functions/Function2;"}
+    1948:1948:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):229:229 -> a
+    1948:1948:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
+    1949:1949:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0:0 -> a
+    1949:1949:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
+      # {"id":"com.android.tools.r8.outlineCallsite","positions":{"1":4049,"2":4050,"3":4051,"4":4052},"outline":"La/d;a(ILandroidx/compose/runtime/Composer;ILkotlin/jvm/functions/Function2;)V"}
+    2183:2183:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):234:234 -> a
+    2183:2183:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
+    2184:2214:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):207:237 -> a
+    2184:2214:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
+    2215:2216:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):92:93 -> a
+    2215:2216:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
+    2217:2217:kotlin.jvm.functions.Function2 com.truid.android.ui.components.ComposableSingletons$TopBarKt.getLambda$-1911111802$sdk_release():0:0 -> a
+    2217:2217:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):93 -> a
+    2217:2217:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
+    2218:2366:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):90:238 -> a
+    2218:2366:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
+    2367:2498:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):108:239 -> a
+    2367:2498:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
+    2499:2650:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):109:260 -> a
+    2499:2650:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
+    2651:2651:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0:0 -> a
+    2651:2651:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
+      # {"id":"com.android.tools.r8.outlineCallsite","positions":{"1":4082,"2":4083,"3":4084,"4":4085,"5":4086},"outline":"La/c;a(Landroidx/compose/ui/node/ComposeUiNode$Companion;Landroidx/compose/runtime/Composer;Landroidx/compose/ui/layout/MeasurePolicy;Landroidx/compose/runtime/Composer;Landroidx/compose/runtime/CompositionLocalMap;)Lkotlin/jvm/functions/Function2;"}
+    2916:2916:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):265:265 -> a
+    2916:2916:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
+    2917:2917:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0:0 -> a
+    2917:2917:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
+      # {"id":"com.android.tools.r8.outlineCallsite","positions":{"1":4089,"2":4090,"3":4091,"4":4092},"outline":"La/d;a(ILandroidx/compose/runtime/Composer;ILkotlin/jvm/functions/Function2;)V"}
+    3187:3187:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):270:270 -> a
+    3187:3187:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
+    3188:3188:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):243:243 -> a
+    3188:3188:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
+    3189:3190:int com.truid.android.api.Session.getNumSteps$sdk_release():510:511 -> a
+    3189:3190:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):112 -> a
+    3189:3190:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
+    3191:3351:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):113:273 -> a
+    3191:3351:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
+    3352:3508:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):118:274 -> a
+    3352:3508:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
+    3509:3511:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):119:121 -> a
+    3509:3511:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
+    3512:3512:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):116:116 -> a
+    3512:3512:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
+    3513:3674:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):114:275 -> a
+    3513:3674:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
+    3675:3857:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):104:286 -> a
+    3675:3857:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
+    3858:3941:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):45:128 -> a
+    3858:3941:void i.TopBarKt.TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,x.LayoutViewModel,androidx.compose.runtime.Composer,int,int):0 -> a
+    3994:3994:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):181:181 -> a
+    3995:3995:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):181:181 -> a
+    3996:3996:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):182:182 -> a
+    3997:3997:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):182:182 -> a
+    3998:3998:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):183:183 -> a
+    4001:4001:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):186:186 -> a
+    4002:4002:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):186:186 -> a
+    4003:4003:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):187:187 -> a
+    4004:4004:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):187:187 -> a
+    4042:4042:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):225:225 -> a
+    4043:4043:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):225:225 -> a
+    4044:4044:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):226:226 -> a
+    4045:4045:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):226:226 -> a
+    4046:4046:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):227:227 -> a
+    4049:4049:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):230:230 -> a
+    4050:4050:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):230:230 -> a
+    4051:4051:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):231:231 -> a
+    4052:4052:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):231:231 -> a
+    4082:4082:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):261:261 -> a
+    4083:4083:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):261:261 -> a
+    4084:4084:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):262:262 -> a
+    4085:4085:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):262:262 -> a
+    4086:4086:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):263:263 -> a
+    4089:4089:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):266:266 -> a
+    4090:4090:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):266:266 -> a
+    4091:4091:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):267:267 -> a
+    4092:4092:void TopBar-FU0evQE(kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,long,boolean,int,com.truid.android.ui.utils.LayoutViewModel,androidx.compose.runtime.Composer,int,int):267:267 -> a
+    4093:4327:void TopBar_FU0evQE$lambda$6(androidx.compose.runtime.MutableState,boolean):54:288 -> a
+    4093:4327:kotlin.Unit TopBar_FU0evQE$lambda$19$lambda$10$lambda$9(androidx.compose.runtime.MutableState):66 -> a
+    4328:4328:kotlin.Unit TopBar_FU0evQE$lambda$19$lambda$10$lambda$9(androidx.compose.runtime.MutableState):66:66 -> a
+    4329:4329:kotlin.Unit TopBar_FU0evQE$lambda$8$lambda$7(com.truid.android.ui.utils.LayoutViewModel,androidx.compose.ui.layout.LayoutCoordinates):60:60 -> a
       # {"id":"com.android.tools.r8.residualsignature","signature":"(Lx/b;Landroidx/compose/ui/layout/LayoutCoordinates;)Lkotlin/Unit;"}
-    4288:4288:void com.truid.android.ui.utils.LayoutViewModel.setScaffoldTopBarBottom(float):30:30 -> a
-    4288:4288:kotlin.Unit TopBar_FU0evQE$lambda$8$lambda$7(com.truid.android.ui.utils.LayoutViewModel,androidx.compose.ui.layout.LayoutCoordinates):57 -> a
+    4330:4330:void com.truid.android.ui.utils.LayoutViewModel.setScaffoldTopBarBottom(float):30:30 -> a
+    4330:4330:kotlin.Unit TopBar_FU0evQE$lambda$8$lambda$7(com.truid.android.ui.utils.LayoutViewModel,androidx.compose.ui.layout.LayoutCoordinates):60 -> a
       # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
-    4289:4379:void com.truid.android.ui.utils.LayoutViewModel.setScaffoldTopBarBottom(float):30:120 -> a
-    4289:4379:kotlin.Unit TopBar_FU0evQE$lambda$8$lambda$7(com.truid.android.ui.utils.LayoutViewModel,androidx.compose.ui.layout.LayoutCoordinates):57 -> a
-    4380:4608:kotlin.Unit TopBar_FU0evQE$lambda$8$lambda$7(com.truid.android.ui.utils.LayoutViewModel,androidx.compose.ui.layout.LayoutCoordinates):58:286 -> a
-    4609:4701:void com.truid.android.ui.utils.LayoutViewModel.setScaffoldWidth(float):31:123 -> a
-    4609:4701:kotlin.Unit TopBar_FU0evQE$lambda$8$lambda$7(com.truid.android.ui.utils.LayoutViewModel,androidx.compose.ui.layout.LayoutCoordinates):58 -> a
-    4702:4702:kotlin.Unit TopBar_FU0evQE$lambda$8$lambda$7(com.truid.android.ui.utils.LayoutViewModel,androidx.compose.ui.layout.LayoutCoordinates):59:59 -> a
-    4703:4704:kotlin.Unit TopBar_FU0evQE$lambda$19$lambda$13(androidx.compose.runtime.MutableState,androidx.compose.runtime.Composer,int):287:288 -> a
-    4705:4927:kotlin.Unit TopBar_FU0evQE$lambda$19$lambda$13(androidx.compose.runtime.MutableState,androidx.compose.runtime.Composer,int):68:290 -> a
-    4928:4928:kotlin.Unit TopBar_FU0evQE$lambda$19$lambda$13(androidx.compose.runtime.MutableState,androidx.compose.runtime.Composer,int):68:68 -> a
-    4929:4929:kotlin.jvm.functions.Function3 com.truid.android.ui.components.ComposableSingletons$TopBarKt.getLambda$969395429$sdk_release():0:0 -> a
-    4929:4929:kotlin.Unit TopBar_FU0evQE$lambda$19$lambda$13(androidx.compose.runtime.MutableState,androidx.compose.runtime.Composer,int):68 -> a
-    4930:4930:kotlin.Unit TopBar_FU0evQE$lambda$19$lambda$13(androidx.compose.runtime.MutableState,androidx.compose.runtime.Composer,int):67:67 -> a
-    4931:4939:kotlin.Unit TopBar_FU0evQE$lambda$19$lambda$13(androidx.compose.runtime.MutableState,androidx.compose.runtime.Composer,int):66:74 -> a
-    1:1:kotlin.Unit TopBar_FU0evQE$lambda$3$lambda$2():45:45 -> b
-    2:235:void TopBar_FU0evQE$lambda$6(androidx.compose.runtime.MutableState,boolean):51:284 -> b
-    2:235:kotlin.Unit TopBar_FU0evQE$lambda$19$lambda$13$lambda$12$lambda$11(androidx.compose.runtime.MutableState):69 -> b
-    236:236:kotlin.Unit TopBar_FU0evQE$lambda$19$lambda$13$lambda$12$lambda$11(androidx.compose.runtime.MutableState):71:71 -> b
-    237:238:kotlin.Unit TopBar_FU0evQE$lambda$19$lambda$16(androidx.compose.runtime.MutableState,androidx.compose.runtime.Composer,int):293:294 -> b
-    239:458:kotlin.Unit TopBar_FU0evQE$lambda$19$lambda$16(androidx.compose.runtime.MutableState,androidx.compose.runtime.Composer,int):77:296 -> b
-    459:459:kotlin.Unit TopBar_FU0evQE$lambda$19$lambda$16(androidx.compose.runtime.MutableState,androidx.compose.runtime.Composer,int):77:77 -> b
-    460:460:kotlin.jvm.functions.Function3 com.truid.android.ui.components.ComposableSingletons$TopBarKt.getLambda$-998409497$sdk_release():0:0 -> b
-    460:460:kotlin.Unit TopBar_FU0evQE$lambda$19$lambda$16(androidx.compose.runtime.MutableState,androidx.compose.runtime.Composer,int):77 -> b
-    461:461:kotlin.Unit TopBar_FU0evQE$lambda$19$lambda$16(androidx.compose.runtime.MutableState,androidx.compose.runtime.Composer,int):76:76 -> b
-    462:467:kotlin.Unit TopBar_FU0evQE$lambda$19$lambda$16(androidx.compose.runtime.MutableState,androidx.compose.runtime.Composer,int):75:80 -> b
-    1:234:void TopBar_FU0evQE$lambda$6(androidx.compose.runtime.MutableState,boolean):51:284 -> c
-    1:234:kotlin.Unit TopBar_FU0evQE$lambda$19$lambda$16$lambda$15$lambda$14(androidx.compose.runtime.MutableState):77 -> c
-    235:235:kotlin.Unit TopBar_FU0evQE$lambda$19$lambda$16$lambda$15$lambda$14(androidx.compose.runtime.MutableState):77:77 -> c
+    4331:4421:void com.truid.android.ui.utils.LayoutViewModel.setScaffoldTopBarBottom(float):30:120 -> a
+    4331:4421:kotlin.Unit TopBar_FU0evQE$lambda$8$lambda$7(com.truid.android.ui.utils.LayoutViewModel,androidx.compose.ui.layout.LayoutCoordinates):60 -> a
+    4422:4651:kotlin.Unit TopBar_FU0evQE$lambda$8$lambda$7(com.truid.android.ui.utils.LayoutViewModel,androidx.compose.ui.layout.LayoutCoordinates):61:290 -> a
+    4652:4744:void com.truid.android.ui.utils.LayoutViewModel.setScaffoldWidth(float):31:123 -> a
+    4652:4744:kotlin.Unit TopBar_FU0evQE$lambda$8$lambda$7(com.truid.android.ui.utils.LayoutViewModel,androidx.compose.ui.layout.LayoutCoordinates):61 -> a
+    4745:4745:kotlin.Unit TopBar_FU0evQE$lambda$8$lambda$7(com.truid.android.ui.utils.LayoutViewModel,androidx.compose.ui.layout.LayoutCoordinates):62:62 -> a
+    4746:4747:kotlin.Unit TopBar_FU0evQE$lambda$19$lambda$13(androidx.compose.runtime.MutableState,androidx.compose.runtime.Composer,int):291:292 -> a
+    4748:4971:kotlin.Unit TopBar_FU0evQE$lambda$19$lambda$13(androidx.compose.runtime.MutableState,androidx.compose.runtime.Composer,int):71:294 -> a
+    4972:4972:kotlin.Unit TopBar_FU0evQE$lambda$19$lambda$13(androidx.compose.runtime.MutableState,androidx.compose.runtime.Composer,int):71:71 -> a
+    4973:4973:kotlin.jvm.functions.Function3 com.truid.android.ui.components.ComposableSingletons$TopBarKt.getLambda$969395429$sdk_release():0:0 -> a
+    4973:4973:kotlin.Unit TopBar_FU0evQE$lambda$19$lambda$13(androidx.compose.runtime.MutableState,androidx.compose.runtime.Composer,int):71 -> a
+    4974:4974:kotlin.Unit TopBar_FU0evQE$lambda$19$lambda$13(androidx.compose.runtime.MutableState,androidx.compose.runtime.Composer,int):70:70 -> a
+    4975:4983:kotlin.Unit TopBar_FU0evQE$lambda$19$lambda$13(androidx.compose.runtime.MutableState,androidx.compose.runtime.Composer,int):69:77 -> a
+    1:1:kotlin.Unit TopBar_FU0evQE$lambda$3$lambda$2():48:48 -> b
+    2:236:void TopBar_FU0evQE$lambda$6(androidx.compose.runtime.MutableState,boolean):54:288 -> b
+    2:236:kotlin.Unit TopBar_FU0evQE$lambda$19$lambda$13$lambda$12$lambda$11(androidx.compose.runtime.MutableState):72 -> b
+    237:237:kotlin.Unit TopBar_FU0evQE$lambda$19$lambda$13$lambda$12$lambda$11(androidx.compose.runtime.MutableState):74:74 -> b
+    238:239:kotlin.Unit TopBar_FU0evQE$lambda$19$lambda$16(androidx.compose.runtime.MutableState,androidx.compose.runtime.Composer,int):297:298 -> b
+    240:460:kotlin.Unit TopBar_FU0evQE$lambda$19$lambda$16(androidx.compose.runtime.MutableState,androidx.compose.runtime.Composer,int):80:300 -> b
+    461:461:kotlin.Unit TopBar_FU0evQE$lambda$19$lambda$16(androidx.compose.runtime.MutableState,androidx.compose.runtime.Composer,int):80:80 -> b
+    462:462:kotlin.jvm.functions.Function3 com.truid.android.ui.components.ComposableSingletons$TopBarKt.getLambda$-998409497$sdk_release():0:0 -> b
+    462:462:kotlin.Unit TopBar_FU0evQE$lambda$19$lambda$16(androidx.compose.runtime.MutableState,androidx.compose.runtime.Composer,int):80 -> b
+    463:463:kotlin.Unit TopBar_FU0evQE$lambda$19$lambda$16(androidx.compose.runtime.MutableState,androidx.compose.runtime.Composer,int):79:79 -> b
+    464:469:kotlin.Unit TopBar_FU0evQE$lambda$19$lambda$16(androidx.compose.runtime.MutableState,androidx.compose.runtime.Composer,int):78:83 -> b
+    1:235:void TopBar_FU0evQE$lambda$6(androidx.compose.runtime.MutableState,boolean):54:288 -> c
+    1:235:kotlin.Unit TopBar_FU0evQE$lambda$19$lambda$16$lambda$15$lambda$14(androidx.compose.runtime.MutableState):80 -> c
+    236:236:kotlin.Unit TopBar_FU0evQE$lambda$19$lambda$16$lambda$15$lambda$14(androidx.compose.runtime.MutableState):80:80 -> c
 com.truid.android.ui.facedetection.ComposableSingletons$FaceDetectionScreenKt -> j.a:
 # {"id":"sourceFile","fileName":"FaceDetectionScreen.kt"}
     kotlin.jvm.functions.Function3 lambda$2006061377 -> a
