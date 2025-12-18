@@ -184,9 +184,9 @@
       <scope>runtime</scope>
     </dependency>
     <dependency>
-      <groupId>org.tensorflow</groupId>
-      <artifactId>tensorflow-lite-task-vision</artifactId>
-      <version>0.4.4</version>
+      <groupId>com.google.mediapipe</groupId>
+      <artifactId>tasks-vision</artifactId>
+      <version>0.10.29</version>
       <scope>runtime</scope>
     </dependency>
     <dependency>
@@ -228,13 +228,13 @@
     <dependency>
       <groupId>org.tensorflow</groupId>
       <artifactId>tensorflow-lite-support</artifactId>
-      <version>0.4.4</version>
+      <version>0.5.0</version>
       <scope>runtime</scope>
     </dependency>
     <dependency>
-      <groupId>org.tensorflow</groupId>
-      <artifactId>tensorflow-lite-metadata</artifactId>
-      <version>0.4.4</version>
+      <groupId>org.opencv</groupId>
+      <artifactId>opencv</artifactId>
+      <version>4.12.0</version>
       <scope>runtime</scope>
     </dependency>
   </dependencies>
