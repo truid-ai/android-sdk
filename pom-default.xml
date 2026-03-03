@@ -24,6 +24,58 @@
   </dependencyManagement>
   <dependencies>
     <dependency>
+      <groupId>androidx.compose.ui</groupId>
+      <artifactId>ui</artifactId>
+      <version>1.9.0</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>androidx.compose.material</groupId>
+      <artifactId>material</artifactId>
+      <version>1.9.0</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>androidx.compose.ui</groupId>
+      <artifactId>ui-tooling-preview</artifactId>
+      <version>1.9.0</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>androidx.activity</groupId>
+      <artifactId>activity-compose</artifactId>
+      <version>1.10.1</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>androidx.navigation</groupId>
+      <artifactId>navigation-compose</artifactId>
+      <version>2.9.3</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>io.coil-kt</groupId>
+      <artifactId>coil-compose</artifactId>
+      <version>2.1.0</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>androidx.compose.material</groupId>
+      <artifactId>material-icons-core</artifactId>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>androidx.compose.material</groupId>
+      <artifactId>material-icons-extended</artifactId>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.airbnb.android</groupId>
+      <artifactId>lottie-compose</artifactId>
+      <version>6.6.7</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
       <groupId>androidx.databinding</groupId>
       <artifactId>viewbinding</artifactId>
       <version>8.11.1</version>
@@ -54,45 +106,9 @@
       <scope>runtime</scope>
     </dependency>
     <dependency>
-      <groupId>androidx.compose.ui</groupId>
-      <artifactId>ui</artifactId>
-      <version>1.9.0</version>
-      <scope>runtime</scope>
-    </dependency>
-    <dependency>
-      <groupId>androidx.compose.material</groupId>
-      <artifactId>material</artifactId>
-      <version>1.9.0</version>
-      <scope>runtime</scope>
-    </dependency>
-    <dependency>
-      <groupId>androidx.compose.ui</groupId>
-      <artifactId>ui-tooling-preview</artifactId>
-      <version>1.9.0</version>
-      <scope>runtime</scope>
-    </dependency>
-    <dependency>
       <groupId>androidx.lifecycle</groupId>
       <artifactId>lifecycle-runtime-ktx</artifactId>
       <version>2.9.2</version>
-      <scope>runtime</scope>
-    </dependency>
-    <dependency>
-      <groupId>androidx.activity</groupId>
-      <artifactId>activity-compose</artifactId>
-      <version>1.10.1</version>
-      <scope>runtime</scope>
-    </dependency>
-    <dependency>
-      <groupId>androidx.navigation</groupId>
-      <artifactId>navigation-compose</artifactId>
-      <version>2.9.3</version>
-      <scope>runtime</scope>
-    </dependency>
-    <dependency>
-      <groupId>io.coil-kt</groupId>
-      <artifactId>coil-compose</artifactId>
-      <version>2.1.0</version>
       <scope>runtime</scope>
     </dependency>
     <dependency>
@@ -129,22 +145,6 @@
       <groupId>com.github.mukeshsolanki</groupId>
       <artifactId>MarkdownView-Android</artifactId>
       <version>2.0.0</version>
-      <scope>runtime</scope>
-    </dependency>
-    <dependency>
-      <groupId>androidx.compose.material</groupId>
-      <artifactId>material-icons-core</artifactId>
-      <scope>runtime</scope>
-    </dependency>
-    <dependency>
-      <groupId>androidx.compose.material</groupId>
-      <artifactId>material-icons-extended</artifactId>
-      <scope>runtime</scope>
-    </dependency>
-    <dependency>
-      <groupId>com.airbnb.android</groupId>
-      <artifactId>lottie-compose</artifactId>
-      <version>6.6.7</version>
       <scope>runtime</scope>
     </dependency>
     <dependency>
