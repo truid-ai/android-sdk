@@ -11,18 +11,73 @@
   <artifactId>truid-sdk</artifactId>
   <version>1.0.1</version>
   <packaging>aar</packaging>
-  <dependencyManagement>
-    <dependencies>
-      <dependency>
-        <groupId>androidx.compose</groupId>
-        <artifactId>compose-bom</artifactId>
-        <version>2025.08.00</version>
-        <type>pom</type>
-        <scope>import</scope>
-      </dependency>
-    </dependencies>
-  </dependencyManagement>
   <dependencies>
+    <dependency>
+      <groupId>com.google.android.material</groupId>
+      <artifactId>material</artifactId>
+      <version>1.12.0</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>androidx.compose.ui</groupId>
+      <artifactId>ui</artifactId>
+      <version>1.9.0</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>androidx.compose.material</groupId>
+      <artifactId>material</artifactId>
+      <version>1.9.0</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>androidx.compose.ui</groupId>
+      <artifactId>ui-tooling-preview</artifactId>
+      <version>1.9.0</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>androidx.activity</groupId>
+      <artifactId>activity-compose</artifactId>
+      <version>1.10.1</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>androidx.navigation</groupId>
+      <artifactId>navigation-compose</artifactId>
+      <version>2.9.3</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>io.coil-kt</groupId>
+      <artifactId>coil-compose</artifactId>
+      <version>2.1.0</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>androidx.compose.material</groupId>
+      <artifactId>material-icons-core</artifactId>
+      <version>1.4.0</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>androidx.compose.material</groupId>
+      <artifactId>material-icons-extended</artifactId>
+      <version>1.4.0</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.airbnb.android</groupId>
+      <artifactId>lottie-compose</artifactId>
+      <version>6.6.7</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.google.android.gms</groupId>
+      <artifactId>play-services-location</artifactId>
+      <version>21.3.0</version>
+      <scope>compile</scope>
+    </dependency>
     <dependency>
       <groupId>androidx.databinding</groupId>
       <artifactId>viewbinding</artifactId>
@@ -48,51 +103,9 @@
       <scope>runtime</scope>
     </dependency>
     <dependency>
-      <groupId>com.google.android.material</groupId>
-      <artifactId>material</artifactId>
-      <version>1.12.0</version>
-      <scope>runtime</scope>
-    </dependency>
-    <dependency>
-      <groupId>androidx.compose.ui</groupId>
-      <artifactId>ui</artifactId>
-      <version>1.9.0</version>
-      <scope>runtime</scope>
-    </dependency>
-    <dependency>
-      <groupId>androidx.compose.material</groupId>
-      <artifactId>material</artifactId>
-      <version>1.9.0</version>
-      <scope>runtime</scope>
-    </dependency>
-    <dependency>
-      <groupId>androidx.compose.ui</groupId>
-      <artifactId>ui-tooling-preview</artifactId>
-      <version>1.9.0</version>
-      <scope>runtime</scope>
-    </dependency>
-    <dependency>
       <groupId>androidx.lifecycle</groupId>
       <artifactId>lifecycle-runtime-ktx</artifactId>
       <version>2.9.2</version>
-      <scope>runtime</scope>
-    </dependency>
-    <dependency>
-      <groupId>androidx.activity</groupId>
-      <artifactId>activity-compose</artifactId>
-      <version>1.10.1</version>
-      <scope>runtime</scope>
-    </dependency>
-    <dependency>
-      <groupId>androidx.navigation</groupId>
-      <artifactId>navigation-compose</artifactId>
-      <version>2.9.3</version>
-      <scope>runtime</scope>
-    </dependency>
-    <dependency>
-      <groupId>io.coil-kt</groupId>
-      <artifactId>coil-compose</artifactId>
-      <version>2.1.0</version>
       <scope>runtime</scope>
     </dependency>
     <dependency>
@@ -132,22 +145,6 @@
       <scope>runtime</scope>
     </dependency>
     <dependency>
-      <groupId>androidx.compose.material</groupId>
-      <artifactId>material-icons-core</artifactId>
-      <scope>runtime</scope>
-    </dependency>
-    <dependency>
-      <groupId>androidx.compose.material</groupId>
-      <artifactId>material-icons-extended</artifactId>
-      <scope>runtime</scope>
-    </dependency>
-    <dependency>
-      <groupId>com.airbnb.android</groupId>
-      <artifactId>lottie-compose</artifactId>
-      <version>6.6.7</version>
-      <scope>runtime</scope>
-    </dependency>
-    <dependency>
       <groupId>com.github.amitshekhariitbhu.Fast-Android-Networking</groupId>
       <artifactId>android-networking</artifactId>
       <version>1.0.4</version>
@@ -175,12 +172,6 @@
       <groupId>org.jetbrains.kotlinx</groupId>
       <artifactId>kotlinx-coroutines-guava</artifactId>
       <version>1.10.2</version>
-      <scope>runtime</scope>
-    </dependency>
-    <dependency>
-      <groupId>com.google.android.gms</groupId>
-      <artifactId>play-services-location</artifactId>
-      <version>21.3.0</version>
       <scope>runtime</scope>
     </dependency>
     <dependency>
@@ -229,43 +220,6 @@
       <groupId>org.opencv</groupId>
       <artifactId>opencv</artifactId>
       <version>4.12.0</version>
-      <scope>runtime</scope>
-    </dependency>
-    <dependency>
-      <groupId>com.github.PhilJay</groupId>
-      <artifactId>MPAndroidChart</artifactId>
-      <version>v3.1.0</version>
-      <scope>runtime</scope>
-    </dependency>
-    <dependency>
-      <groupId>com.squareup.retrofit2</groupId>
-      <artifactId>retrofit</artifactId>
-      <version>2.11.0</version>
-      <scope>runtime</scope>
-    </dependency>
-    <dependency>
-      <groupId>com.squareup.retrofit2</groupId>
-      <artifactId>converter-gson</artifactId>
-      <version>2.11.0</version>
-      <scope>runtime</scope>
-    </dependency>
-    <dependency>
-      <groupId>com.squareup.okhttp3</groupId>
-      <artifactId>logging-interceptor</artifactId>
-      <version>4.12.0</version>
-      <scope>runtime</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.jetbrains.kotlinx</groupId>
-      <artifactId>kotlinx-serialization-json</artifactId>
-      <version>1.9.0</version>
-      <classifier></classifier>
-      <scope>runtime</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.jetbrains.kotlinx</groupId>
-      <artifactId>kotlinx-collections-immutable</artifactId>
-      <version>0.3.6</version>
       <scope>runtime</scope>
     </dependency>
   </dependencies>
