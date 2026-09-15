@@ -232,12 +232,6 @@
       <scope>runtime</scope>
     </dependency>
     <dependency>
-      <groupId>com.microsoft.onnxruntime</groupId>
-      <artifactId>onnxruntime-android</artifactId>
-      <version>1.29.0</version>
-      <scope>runtime</scope>
-    </dependency>
-    <dependency>
       <groupId>org.opencv</groupId>
       <artifactId>opencv</artifactId>
       <version>4.12.0</version>
