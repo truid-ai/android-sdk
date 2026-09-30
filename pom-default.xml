@@ -9,7 +9,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.truid.android</groupId>
   <artifactId>truid-sdk</artifactId>
-  <version>1.0.1</version>
+  <version>1.0.1-local</version>
   <packaging>aar</packaging>
   <dependencies>
     <dependency>
