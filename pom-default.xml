@@ -217,12 +217,6 @@
       <scope>runtime</scope>
     </dependency>
     <dependency>
-      <groupId>com.google.ai.edge.litert</groupId>
-      <artifactId>litert-support</artifactId>
-      <version>1.4.2</version>
-      <scope>runtime</scope>
-    </dependency>
-    <dependency>
       <groupId>org.opencv</groupId>
       <artifactId>opencv</artifactId>
       <version>4.12.0</version>
